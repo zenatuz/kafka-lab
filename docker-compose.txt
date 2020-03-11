@@ -1,0 +1,23 @@
+version: '2'
+
+networks:
+  app-tier:
+    driver: bridge
+
+services:
+  zookeeper:
+    image: 'bitnami/zookeeper:latest'
+    networks:
+      - app-tier
+  kafka:
+    image: 'bitnami/kafka:latest'
+    networks:
+      - app-tier
+  python:
+    image: 'python:alpine'
+    volumes:
+        - ./app:/app
+    working_dir: /app
+    command: tail -f /dev/null
+    networks:
+      - app-tier
