@@ -26,3 +26,8 @@ Para se conectar a um container, digite:
 Caso queira validar a conexão ao Kafka, sem um código, pode-se utilizar de clientes como o [https://www.conduktor.io/](https://www.conduktor.io/) ou [http://www.kafkatool.com/](http://www.kafkatool.com/) ou ainda uma console web como o [https://github.com/yahoo/CMAK](https://github.com/yahoo/CMAK). 
 
 Todas essas ferramentas permitirão a conexão ao Kafka, onde será possível gerenciar tópicos, visualizar informações ou consumir um determinado tópico em tempo real.
+
+----
+
+## Documentação e Repositório base 
+Utilizei como documentação e consulta o repositório da Bitnami [https://github.com/bitnami/bitnami-docker-kafka](https://github.com/bitnami/bitnami-docker-kafka).
