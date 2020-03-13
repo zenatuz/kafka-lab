@@ -16,4 +16,4 @@ Para verificar se os containers estão rodando, digite:
 > ```docker-compose ps```
 
 Para se conectar a um container, digite:
-> ```docker-compose exec <NOME_DO_SERVIÇO>```
+> ```docker-compose exec <NOME_DO_SERVIÇO> /bin/bash```
