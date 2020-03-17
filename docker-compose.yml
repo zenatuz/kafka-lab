@@ -1,3 +1,5 @@
+# Docker-compose based on https://hub.docker.com/r/bitnami/kafka/
+
 version: '3'
 
 services:
@@ -21,7 +23,7 @@ services:
       - ALLOW_PLAINTEXT_LISTENER=yes
       - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092
-      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://10.10.4.2:9092
+      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://10.10.22.12:9092
     depends_on:
       - zookeeper
 
